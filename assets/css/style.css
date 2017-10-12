@@ -1,0 +1,126 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+a { color: #999; }
+a:focus,input:focus,textarea:focus { outline: 0 solid }
+a:hover { text-decoration: none; }
+/*img { max-width: 100%; height: auto; }*/
+
+h1, h2, h3, h4, h5, h6 { margin: 0 0 15px; font-weight: 700; }
+
+body { font-family: 'Open Sans', sans-serif; background-color: #efefef; }
+
+.section-padding {
+  padding:  30px 0;
+}
+
+.single-news-items {
+  position: relative;
+  height: 445px;
+  overflow: hidden;
+}
+
+.news-img {
+  height: 245px;
+  background-size: cover;
+  background-position: center;
+  transition: .3s;
+}
+.news-bg-1 {
+  background-image: url("../img/city-skyline.jpeg");
+}
+.news-date {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  height: 55px;
+  width: 55px;
+  content: "";
+  background: #E74C3D;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 11px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.news-date span {
+  font-size: 12px;
+}
+
+.news-content {
+  background: #fff;
+  border: 1px solid #E7E7E7;
+  border-top: none;
+  padding: 32px 30px;
+  color: #757575;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  transition: .2s;
+}
+.news-cat {
+  position: absolute;
+  top: -32px;
+  left: -1px;
+  background-color: #E74C3D;
+  color: #fff;
+  width: 94px;
+  padding: 6px 11px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title-area h3 {
+  color: #333333;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+.title-area h4 {
+  color: #E74C3D;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.news-meta {
+  background: #fff;
+  font-size: 13px;
+  color: #999A9F;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 30px 32px;
+}
+.news-meta span:nth-child(1) {
+  margin-right: 15px;
+}
+
+.news-text {
+  line-height: 2.5rem;
+  font-size: 13px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: .3s;
+  z-index: 2;
+}
+
+
+.single-news-items:hover {
+  box-shadow: 0 0 20px #999;
+}
+.single-news-items:hover .news-img {
+  transform: scale(1.15);
+}
+.single-news-items:hover .news-content {
+  height: 280px;
+}
+.single-news-items:hover .news-text {
+  opacity: 1;
+  visibility: visible;
+}
