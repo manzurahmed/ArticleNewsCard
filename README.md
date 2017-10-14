@@ -1,2 +1,2 @@
 # ArticleNewsCard
-Bootstrap 3.3.7 based HTML5 Article or News Card
+Bootstrap 3.3.7 based HTML5 Article or News Card. Styled with CSS3.
